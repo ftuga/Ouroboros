@@ -1,0 +1,58 @@
+# CLAUDE.md — Ouroboros-managed system prompt
+> Every session starts by loading this file. Rules below are actively enforced.
+> Last evolution: <!-- LAST_EVOLUTION --><!-- /LAST_EVOLUTION -->
+
+---
+
+## 🔄 Auto-evolution protocol
+
+| Moment | Command |
+|---|---|
+| When correcting an error | `ouroboros learn <category> "<lesson>" "<trigger>"` |
+| When a pattern repeats 2+ times | `ouroboros skill <name> "<description>"` |
+| At the start of each session | `ouroboros session-start` |
+| Before declaring a task complete | `ouroboros self-check` |
+| At the end of each session | `ouroboros session-end "<summary>"` |
+
+**Valid categories:** `seguridad` · `interfaz` · `funcionalidad` · `operatividad` · `arquitectura` · `performance` · `testing` · `datos` · `auth` · `docker`
+
+---
+
+## 🛡️ SECURITY
+<!-- Learnings in category "seguridad" appended here -->
+
+## 🎨 INTERFACE
+<!-- Learnings in category "interfaz" appended here -->
+
+## ⚙️ FUNCTIONALITY
+<!-- Learnings in category "funcionalidad" appended here -->
+
+## 🔧 OPERABILITY
+<!-- Learnings in category "operatividad" appended here -->
+
+## 🏗️ ARCHITECTURE
+<!-- Learnings in category "arquitectura" appended here -->
+
+## ⚡ PERFORMANCE
+<!-- Learnings in category "performance" appended here -->
+
+## 🧪 TESTING
+<!-- Learnings in category "testing" appended here -->
+
+---
+
+```json
+{
+  "total_sessions": 0,
+  "last_update": "",
+  "total_learnings": 0
+}
+```
+
+## 📋 SESSIONS
+| # | Date | Summary | Learnings | Skills |
+|---|---|---|---|---|
+
+## 📈 RECENT EVOLUTIONS
+| # | Date | Category | Learning |
+|---|---|---|---|
