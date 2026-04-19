@@ -13,13 +13,13 @@ echo -e "${BLUE}⬡ Ouroboros installer${NC}"
 
 # 1. Copy scripts
 for f in evolve.sh self-check.sh session-start.sh session-end.sh; do
-    cp "$OURO_DIR/src/$f" "$CLAUDE_DIR/$f"
+    cp "$OURO_DIR/hooks/$f" "$CLAUDE_DIR/$f"
     chmod +x "$CLAUDE_DIR/$f"
     echo -e "  ${GREEN}✓${NC} $f → $CLAUDE_DIR/"
 done
 
 for f in decay.sh session-exit-hook.sh; do
-    cp "$OURO_DIR/src/$f" "$CLAUDE_DIR/helpers/$f"
+    cp "$OURO_DIR/hooks/$f" "$CLAUDE_DIR/helpers/$f"
     chmod +x "$CLAUDE_DIR/helpers/$f"
     echo -e "  ${GREEN}✓${NC} $f → $CLAUDE_DIR/helpers/"
 done

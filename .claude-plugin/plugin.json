@@ -1,0 +1,23 @@
+{
+  "name": "ouroboros",
+  "version": "1.0.0",
+  "description": "Self-evolving harness for Claude Code — the agent rewrites its own operating rules as it learns",
+  "homepage": "https://github.com/ftuga/Ouroboros",
+  "license": "AGPL-3.0",
+  "keywords": ["claude-code", "agent", "memory", "self-improving", "claude-md"],
+  "hooks": {
+    "SessionStart": [
+      {"matcher": ".*", "command": "hooks/session-start.sh"}
+    ],
+    "SessionEnd": [
+      {"matcher": ".*", "command": "hooks/session-exit-hook.sh"}
+    ]
+  },
+  "commands": [
+    {"name": "learn", "file": "commands/learn.md"},
+    {"name": "skill", "file": "commands/skill.md"},
+    {"name": "self-check", "file": "commands/self-check.md"},
+    {"name": "session-start", "file": "commands/session-start.md"},
+    {"name": "session-end", "file": "commands/session-end.md"}
+  ]
+}
